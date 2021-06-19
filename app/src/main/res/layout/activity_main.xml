@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@drawable/pic"
+    android:padding="@dimen/padMain"
+
+    >
 
     <TextView
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:textSize="@dimen/textViewSize"
+        android:background = "@color/grey"/>
+
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/seven"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
-        android:text="@string/button7"
-        />
+        android:backgroundTint="@color/blue"
+        android:text="@string/button7" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/eight"
@@ -23,6 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
         android:layout_toEndOf="@id/seven"
+        android:backgroundTint="@color/blue"
         android:text="@string/button8" />
 
     <com.google.android.material.button.MaterialButton
@@ -31,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
         android:layout_toEndOf="@id/eight"
+        android:backgroundTint="@color/blue"
         android:text="@string/button9" />
 
     <com.google.android.material.button.MaterialButton
@@ -38,7 +48,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/seven"
-        android:text="@string/button4"/>
+        android:backgroundTint="@color/blue"
+        android:text="@string/button4" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/five"
@@ -46,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/eight"
         android:layout_toEndOf="@id/four"
+        android:backgroundTint="@color/blue"
         android:text="@string/button5" />
 
     <com.google.android.material.button.MaterialButton
@@ -54,6 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/nine"
         android:layout_toEndOf="@id/five"
+        android:backgroundTint="@color/blue"
         android:text="@string/button6" />
 
     <com.google.android.material.button.MaterialButton
@@ -61,7 +74,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/four"
-        android:text="@string/button1"/>
+        android:backgroundTint="@color/blue"
+        android:text="@string/button1" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/two"
@@ -69,6 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/five"
         android:layout_toEndOf="@id/one"
+        android:backgroundTint="@color/blue"
         android:text="@string/button2" />
 
     <Button
@@ -77,14 +92,16 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/six"
         android:layout_toEndOf="@id/two"
-        android:text="@string/button3"/>
+        android:backgroundTint="@color/blue"
+        android:text="@string/button3" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/one"
-        android:text="@string/button_discharge"/>
+        android:text="@string/button_discharge"
+        android:backgroundTint="@color/blue_2"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/zero"
@@ -92,7 +109,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/two"
         android:layout_alignEnd="@id/eight"
-        android:text="@string/button0"/>
+        android:backgroundTint="@color/blue"
+        android:text="@string/button0" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/equals"
@@ -100,7 +118,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/three"
         android:layout_alignEnd="@id/nine"
-        android:text="@string/button_equally" />
+        android:text="@string/button_equally"
+        android:backgroundTint="@color/blue_2"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/division"
@@ -108,7 +127,8 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/nine"
         android:layout_toEndOf="@id/nine"
-        android:text="@string/button_del"/>
+        android:text="@string/button_del"
+        android:backgroundTint="@color/blue_2"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/multiply"
@@ -116,7 +136,8 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/six"
         android:layout_toEndOf="@id/six"
-        android:text="@string/button_mux"/>
+        android:text="@string/button_mux"
+        android:backgroundTint="@color/blue_2"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/minus"
@@ -124,7 +145,8 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/three"
         android:layout_toEndOf="@id/three"
-        android:text="@string/button_minus"/>
+        android:text="@string/button_minus"
+        android:backgroundTint="@color/blue_2" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/plus"
@@ -132,6 +154,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/equals"
         android:layout_toEndOf="@id/equals"
-        android:text="@string/button_plus"/>
+        android:text="@string/button_plus"
+        android:backgroundTint="@color/blue_2" />
 
 </RelativeLayout>
