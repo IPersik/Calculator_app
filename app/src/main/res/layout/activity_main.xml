@@ -5,16 +5,14 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@drawable/pic"
-    android:padding="@dimen/padMain"
-
-    >
+    android:padding="@dimen/padMain">
 
     <TextView
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/textViewSize"
-        android:background = "@color/grey"/>
+        android:background="@color/grey"
+        android:textSize="@dimen/textViewSize" />
 
 
     <com.google.android.material.button.MaterialButton
@@ -100,8 +98,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/one"
-        android:text="@string/button_discharge"
-        android:backgroundTint="@color/blue_2"/>
+        android:backgroundTint="@color/blue_2"
+        android:text="@string/button_discharge" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/zero"
@@ -118,8 +116,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/three"
         android:layout_alignEnd="@id/nine"
-        android:text="@string/button_equally"
-        android:backgroundTint="@color/blue_2"/>
+        android:backgroundTint="@color/blue_2"
+        android:text="@string/button_equally" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/division"
@@ -127,8 +125,8 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/nine"
         android:layout_toEndOf="@id/nine"
-        android:text="@string/button_del"
-        android:backgroundTint="@color/blue_2"/>
+        android:backgroundTint="@color/blue_2"
+        android:text="@string/button_del" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/multiply"
@@ -136,8 +134,8 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/six"
         android:layout_toEndOf="@id/six"
-        android:text="@string/button_mux"
-        android:backgroundTint="@color/blue_2"/>
+        android:backgroundTint="@color/blue_2"
+        android:text="@string/button_mux" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/minus"
@@ -145,8 +143,8 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/three"
         android:layout_toEndOf="@id/three"
-        android:text="@string/button_minus"
-        android:backgroundTint="@color/blue_2" />
+        android:backgroundTint="@color/blue_2"
+        android:text="@string/button_minus" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/plus"
@@ -154,7 +152,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/equals"
         android:layout_toEndOf="@id/equals"
-        android:text="@string/button_plus"
-        android:backgroundTint="@color/blue_2" />
+        android:backgroundTint="@color/blue_2"
+        android:text="@string/button_plus" />
 
 </RelativeLayout>
