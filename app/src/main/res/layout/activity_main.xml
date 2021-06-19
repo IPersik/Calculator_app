@@ -1,18 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/seven"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@id/text"
+        android:text="@string/button7"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_toEndOf="@id/seven"
+        android:text="@string/button8" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_toEndOf="@id/eight"
+        android:text="@string/button9" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seven"
+        android:text="@string/button4"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eight"
+        android:layout_toEndOf="@id/four"
+        android:text="@string/button5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nine"
+        android:layout_toEndOf="@id/five"
+        android:text="@string/button6" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/four"
+        android:text="@string/button1"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/five"
+        android:layout_toEndOf="@id/one"
+        android:text="@string/button2" />
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/six"
+        android:layout_toEndOf="@id/two"
+        android:text="@string/button3"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/one"
+        android:text="@string/button_discharge"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/two"
+        android:layout_alignEnd="@id/eight"
+        android:text="@string/button0"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/equals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/three"
+        android:layout_alignEnd="@id/nine"
+        android:text="@string/button_equally" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/nine"
+        android:layout_toEndOf="@id/nine"
+        android:text="@string/button_del"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/six"
+        android:layout_toEndOf="@id/six"
+        android:text="@string/button_mux"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/three"
+        android:layout_toEndOf="@id/three"
+        android:text="@string/button_minus"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/equals"
+        android:layout_toEndOf="@id/equals"
+        android:text="@string/button_plus"/>
+
+</RelativeLayout>
