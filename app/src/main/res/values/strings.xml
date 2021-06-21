@@ -17,4 +17,5 @@
     <string name="button_mux">*</string>
     <string name="button_equally">=</string>
     <string name="button_discharge">C</string>
+    <string name="button_point">.</string>
 </resources>

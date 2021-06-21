@@ -16,11 +16,4 @@
         <item name="android:insetRight">@dimen/insRight</item>
     </style>
 
-    <style name="calc_button.signsFour">
-        <item name="android:layout_weight">1</item>
-        <item name="android:textSize">@dimen/calc_button_size</item>
-        <item name="android:backgroundTint">#8EA1D8</item>
-        <item name="android:insetLeft">@dimen/insLiftFour</item>
-        <item name="android:insetRight">@dimen/insRightFour</item>
-    </style>
 </resources>

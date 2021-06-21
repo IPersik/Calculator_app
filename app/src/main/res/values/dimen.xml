@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="textViewSize">40sp</dimen>
-    <dimen name="padMain">40dp</dimen>
-    <dimen name="calc_button_size">23sp</dimen>
+    <dimen name="padMain">35dp</dimen>
+    <dimen name="calc_button_size">28sp</dimen>
     <dimen name="insLift">5dp</dimen>
     <dimen name="insRight">5dp</dimen>
-    <dimen name="insLiftFour">7dp</dimen>
-    <dimen name="insRightFour">7dp</dimen>
+    <dimen name="insLiftFour">9dp</dimen>
+    <dimen name="insRightFour">9dp</dimen>
+    <dimen name="calc_button_size_four">50sp</dimen>
 </resources>
