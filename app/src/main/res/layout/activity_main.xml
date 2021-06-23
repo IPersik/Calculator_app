@@ -7,13 +7,15 @@
     android:background="@drawable/pic"
     android:padding="@dimen/padMain">
 
-    <TextView
+    <EditText
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/grey"
-        android:textSize="@dimen/textViewSize" />
-
+        android:textSize="@dimen/textViewSize"
+        android:inputType="number">
+        <requestFocus />
+    </EditText>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/seven"
