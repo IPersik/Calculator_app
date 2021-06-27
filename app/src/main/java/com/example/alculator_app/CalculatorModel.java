@@ -66,9 +66,6 @@ public class CalculatorModel {
                 case R.id.nine:
                     input_string.append("9");
                     break;
-                case R.id.point:
-                    input_string.append(".");
-                    break;
             }
         }
     }

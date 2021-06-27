@@ -13,4 +13,29 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="calc_button_night" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/calc_button_size</item>
+        <item name="android:backgroundTint">#35519C</item>
+        <item name="android:insetLeft">@dimen/insLift</item>
+        <item name="android:insetRight">@dimen/insRight</item>
+    </style>
+
+    <style name="calc_button_night.signs">
+        <item name="android:backgroundTint">#586281</item>
+    </style>
+
+    <style name="text_win_style" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/marTop</item>
+        <item name="android:layout_marginBottom">@dimen/marBot</item>
+        <item name="android:background">@drawable/input_text</item>
+        <item name="android:paddingStart">@dimen/padStart</item>
+        <item name="android:paddingTop">@dimen/padTop</item>
+        <item name="android:paddingEnd">@dimen/padEnd</item>
+        <item name="android:paddingBottom">@dimen/padBottom</item>
+        <item name="android:textSize">@dimen/textViewSize</item>
+        <item name="android:backgroundTint">#586281</item>
+    </style>
 </resources>

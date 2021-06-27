@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="textViewSize">40sp</dimen>
-    <dimen name="padMain">35dp</dimen>
     <dimen name="calc_button_size">28sp</dimen>
+    <dimen name="textViewSize">50sp</dimen>
+    <dimen name="padStart">2dp</dimen>
+    <dimen name="padTop">2dp</dimen>
+    <dimen name="padEnd">4dp</dimen>
+    <dimen name="padBottom">8dp</dimen>
+    <dimen name="padMain">30dp</dimen>
     <dimen name="insLift">5dp</dimen>
     <dimen name="insRight">5dp</dimen>
-    <dimen name="insLiftFour">9dp</dimen>
-    <dimen name="insRightFour">9dp</dimen>
-    <dimen name="calc_button_size_four">50sp</dimen>
+    <dimen name="marTop">4dp</dimen>
+    <dimen name="marBot">16dp</dimen>
 </resources>

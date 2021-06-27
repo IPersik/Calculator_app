@@ -2,26 +2,24 @@ package com.example.alculator_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.text.method.DigitsKeyListener;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import java.util.ArrayList;
 
 public class CalculatorActivity extends AppCompatActivity {
-
     private CalculatorModel calculator;
     private TextView text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(getAppTheme());
         setContentView(R.layout.activity_main);
+        initChanger();
 
-        int[] numberIds = new int[] {
+        int[] numberIds = new int[]{
                 R.id.zero,
                 R.id.one,
                 R.id.two,
@@ -32,10 +30,10 @@ public class CalculatorActivity extends AppCompatActivity {
                 R.id.seven,
                 R.id.eight,
                 R.id.nine,
-                /*R.id.point*/
+                R.id.point
         };
 
-        int[] actionsIds = new int[] {
+        int[] actionsIds = new int[]{
                 R.id.plus,
                 R.id.minus,
                 R.id.multiply,
@@ -73,5 +71,37 @@ public class CalculatorActivity extends AppCompatActivity {
             text.setText(calculator.getText());
         });
 
+    }
+
+    private int day_t = 1;
+    private String key = "key";
+    private String app_theme = "theme";
+
+
+    private void initChanger() {
+        initButton(findViewById(R.id.day), day_t);
+    }
+
+    private void initButton(Button button, int codeStyle) {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setAppTheme(codeStyle);
+                recreate();
+            }
+        });
+    }
+
+    private void setAppTheme(int codeStyle) {
+        SharedPreferences sharedPreferences = getSharedPreferences(key, MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt(app_theme, codeStyle);
+        editor.apply();
+    }
+
+    private int getAppTheme() {
+        int codeStyle = day_t;
+        SharedPreferences sharedPreferences = getSharedPreferences(key, MODE_PRIVATE);
+        return sharedPreferences.getInt(app_theme, codeStyle);
     }
 }

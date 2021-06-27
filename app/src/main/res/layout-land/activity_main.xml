@@ -4,18 +4,18 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@drawable/pic"
-    android:padding="@dimen/padMain">
+    android:padding="@dimen/padMain"
+    tools:context=".CalculatorActivity">
 
     <TextView
         android:id="@+id/text"
-        android:layout_width="529dp"
-        android:layout_height="wrap_content"
-        android:background="@color/grey"
-        android:textSize="@dimen/textViewSize" />
+        style="@style/text_win_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/seven"
-        style="@style/calc_button"
+        style="@style/light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
@@ -23,7 +23,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/eight"
-        style="@style/calc_button"
+        style="@style/light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
@@ -32,7 +32,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/nine"
-        style="@style/calc_button"
+        style="@style/light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
@@ -41,7 +41,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/four"
-        style="@style/calc_button"
+        style="@style/light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/seven"
@@ -49,7 +49,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/five"
-        style="@style/calc_button"
+        style="@style/light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/eight"
@@ -58,7 +58,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/six"
-        style="@style/calc_button"
+        style="@style/light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/nine"
@@ -67,7 +67,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/one"
-        style="@style/calc_button"
+        style="@style/light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/four"
@@ -75,7 +75,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/two"
-        style="@style/calc_button"
+        style="@style/light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/five"
@@ -84,7 +84,7 @@
 
     <Button
         android:id="@+id/three"
-        style="@style/calc_button"
+        style="@style/light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/six"
@@ -93,7 +93,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/reset"
-        style="@style/calc_button.signs"
+        style="@style/light.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
@@ -102,7 +102,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/zero"
-        style="@style/calc_button"
+        style="@style/light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/minus"
@@ -111,7 +111,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/equals"
-        style="@style/calc_button.signs"
+        style="@style/light.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
@@ -120,7 +120,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/division"
-        style="@style/calc_button.signs"
+        style="@style/light.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/zero"
@@ -129,7 +129,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/multiply"
-        style="@style/calc_button.signs"
+        style="@style/light.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/reset"
@@ -138,7 +138,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/minus"
-        style="@style/calc_button.signs"
+        style="@style/light.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
@@ -147,7 +147,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/plus"
-        style="@style/calc_button.signs"
+        style="@style/light.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/equals"
@@ -155,20 +155,22 @@
         android:text="@string/button_plus" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/no"
-        style="@style/calc_button.signs"
+        android:id="@+id/day"
+        style="@style/light.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/plus"
-        android:layout_toEndOf="@id/point" />
+        android:layout_toEndOf="@id/point"
+        android:text="@string/day_night" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/point"
-        style="@style/calc_button.signs"
+        style="@style/light.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/multiply"
         android:layout_toEndOf="@id/division"
         android:text="@string/button_point" />
+
 
 </RelativeLayout>
