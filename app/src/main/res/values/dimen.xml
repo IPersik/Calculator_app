@@ -7,8 +7,8 @@
     <dimen name="padEnd">4dp</dimen>
     <dimen name="padBottom">8dp</dimen>
     <dimen name="padMain">30dp</dimen>
-    <dimen name="insLift">5dp</dimen>
-    <dimen name="insRight">5dp</dimen>
+    <dimen name="insLift">10dp</dimen>
+    <dimen name="insRight">10dp</dimen>
     <dimen name="marTop">4dp</dimen>
     <dimen name="marBot">16dp</dimen>
 </resources>

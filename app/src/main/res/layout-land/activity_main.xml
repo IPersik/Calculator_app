@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/pic"
     android:padding="@dimen/padMain"
     tools:context=".CalculatorActivity">
 
@@ -15,7 +14,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/seven"
-        style="@style/light"
+        style="@style/butt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
@@ -23,7 +22,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/eight"
-        style="@style/light"
+        style="@style/butt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
@@ -32,7 +31,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/nine"
-        style="@style/light"
+        style="@style/butt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
@@ -41,7 +40,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/four"
-        style="@style/light"
+        style="@style/butt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/seven"
@@ -49,7 +48,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/five"
-        style="@style/light"
+        style="@style/butt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/eight"
@@ -58,7 +57,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/six"
-        style="@style/light"
+        style="@style/butt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/nine"
@@ -67,7 +66,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/one"
-        style="@style/light"
+        style="@style/butt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/four"
@@ -75,7 +74,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/two"
-        style="@style/light"
+        style="@style/butt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/five"
@@ -84,7 +83,7 @@
 
     <Button
         android:id="@+id/three"
-        style="@style/light"
+        style="@style/butt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/six"
@@ -93,7 +92,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/reset"
-        style="@style/light.signs"
+        style="@style/butt.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
@@ -102,7 +101,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/zero"
-        style="@style/light"
+        style="@style/butt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/minus"
@@ -111,7 +110,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/equals"
-        style="@style/light.signs"
+        style="@style/butt.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
@@ -120,7 +119,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/division"
-        style="@style/light.signs"
+        style="@style/butt.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/zero"
@@ -129,7 +128,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/multiply"
-        style="@style/light.signs"
+        style="@style/butt.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/reset"
@@ -138,7 +137,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/minus"
-        style="@style/light.signs"
+        style="@style/butt.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
@@ -147,7 +146,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/plus"
-        style="@style/light.signs"
+        style="@style/butt.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/equals"
@@ -156,7 +155,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/day"
-        style="@style/light.signs"
+        style="@style/butt.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/plus"
@@ -165,7 +164,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/point"
-        style="@style/light.signs"
+        style="@style/butt.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/multiply"
