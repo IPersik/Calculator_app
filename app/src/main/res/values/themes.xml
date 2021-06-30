@@ -1,21 +1,23 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+
     <style name="Theme.Сalculator_app" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
         <item name="colorOnPrimary">@color/white</item>
         <item name="android:background">@drawable/pic</item>
-    </style>
-
-    <style name="butt" parent="Theme.MaterialComponents.Light">
         <item name="android:layout_weight">1</item>
+        <item name="colorPrimary">@color/blue</item>
         <item name="android:textSize">@dimen/calc_button_size</item>
-        <item name="android:backgroundTint">#B1C1EE</item>
-        <item name="android:insetLeft">@dimen/insLift</item>
-        <item name="android:insetRight">@dimen/insRight</item>
+        <item name="android:insetLeft">dimen/insLift</item>
+        <item name="android:insetRight">dimen/insRight</item>
+
     </style>
 
-    <style name="butt.signs">
+    <style name="Theme.Сalculator_app.signs">
         <item name="android:backgroundTint">#8EA1D8</item>
+    </style>
+
+    <style name="theme">
+        <item name="android:backgroundTint">@color/grey</item>
+        <item name="android:textSize">@dimen/calc_button_size_theme</item>
     </style>
 
     <style name="text_win_style" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
@@ -29,4 +31,5 @@
         <item name="android:paddingBottom">@dimen/padBottom</item>
         <item name="android:textSize">@dimen/textViewSize</item>
     </style>
+
 </resources>

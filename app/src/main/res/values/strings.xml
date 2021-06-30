@@ -18,5 +18,8 @@
     <string name="button_equally">=</string>
     <string name="button_discharge">C</string>
     <string name="button_point">.</string>
-    <string name="day_night"> </string>
+    <string name="day_night">Хочу сменить тему!</string>
+    <string name="change_topic">Выбери тему</string>
+    <string name="day">Дневная тема</string>
+    <string name="night">ночная тема</string>
 </resources>
