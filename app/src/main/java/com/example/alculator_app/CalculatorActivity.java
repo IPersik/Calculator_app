@@ -1,7 +1,9 @@
 package com.example.alculator_app;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -15,9 +17,11 @@ public class CalculatorActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTheme(getAppTheme());
         setContentView(R.layout.activity_main);
-        initChanger();
+
+        (findViewById(R.id.change)).setOnClickListener(v -> {
+            this.startActivity((new Intent(this, CalculatorChange.class)));
+        });
 
         int[] numberIds = new int[]{
                 R.id.zero,
@@ -70,38 +74,5 @@ public class CalculatorActivity extends AppCompatActivity {
             calculator.reset();
             text.setText(calculator.getText());
         });
-
-    }
-
-    private int day_t = 1;
-    private String key = "key";
-    private String app_theme = "theme";
-
-
-    private void initChanger() {
-        initButton(findViewById(R.id.day), day_t);
-    }
-
-    private void initButton(Button button, int codeStyle) {
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setAppTheme(codeStyle);
-                recreate();
-            }
-        });
-    }
-
-    private void setAppTheme(int codeStyle) {
-        SharedPreferences sharedPreferences = getSharedPreferences(key, MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putInt(app_theme, codeStyle);
-        editor.apply();
-    }
-
-    private int getAppTheme() {
-        int codeStyle = day_t;
-        SharedPreferences sharedPreferences = getSharedPreferences(key, MODE_PRIVATE);
-        return sharedPreferences.getInt(app_theme, codeStyle);
     }
 }

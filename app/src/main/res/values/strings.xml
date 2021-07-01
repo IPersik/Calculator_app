@@ -22,4 +22,5 @@
     <string name="change_topic">Выбери тему</string>
     <string name="day">Дневная тема</string>
     <string name="night">ночная тема</string>
+    <string name="change_text">Выберите тему</string>
 </resources>

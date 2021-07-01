@@ -108,7 +108,6 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/division"
-        style="@style/butt.signs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/plus"

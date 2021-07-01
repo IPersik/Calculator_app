@@ -5,17 +5,19 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
+    android:orientation="vertical"
     android:padding="@dimen/padMain"
-    tools:context=".CalculatorActivity">
+    tools:context=".CalculatorChange">
 
     <TextView
         android:id="@+id/text_change"
         style="@style/text_win_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/change_text"
         android:gravity="center" />
 
-    <com.google.android.material.button.MaterialButton
+    <RadioButton
         android:id="@+id/day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +25,7 @@
         android:gravity="center"
         android:text="@string/day" />
 
-    <com.google.android.material.button.MaterialButton
+    <RadioButton
         android:id="@+id/night"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
