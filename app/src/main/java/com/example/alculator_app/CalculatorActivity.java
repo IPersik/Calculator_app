@@ -1,27 +1,24 @@
 package com.example.alculator_app;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class CalculatorActivity extends AppCompatActivity {
     private CalculatorModel calculator;
     private TextView text;
 
+    public static final int requestCode = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        (findViewById(R.id.change)).setOnClickListener(v -> {
-            this.startActivity((new Intent(this, CalculatorChange.class)));
-        });
 
         int[] numberIds = new int[]{
                 R.id.zero,
@@ -48,7 +45,6 @@ public class CalculatorActivity extends AppCompatActivity {
         text = findViewById(R.id.text);
         calculator = new CalculatorModel();
 
-
         View.OnClickListener numberButtonClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,5 +70,15 @@ public class CalculatorActivity extends AppCompatActivity {
             calculator.reset();
             text.setText(calculator.getText());
         });
+
+        (findViewById(R.id.change)).setOnClickListener(v -> {
+            Intent intent = new Intent(this, CalculatorChange.class);
+            this.startActivityForResult(intent, requestCode);
+        });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
     }
 }

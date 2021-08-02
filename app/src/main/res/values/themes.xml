@@ -21,6 +21,15 @@
         <item name="android:textSize">@dimen/calc_button_size_theme</item>
     </style>
 
+    <style name="light" parent="Theme.MaterialComponents.Light">
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:background">@drawable/pic</item>
+        <item name="android:layout_weight">1</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="android:textSize">@dimen/calc_button_size</item>
+    </style>
+
+
     <style name="text_win_style" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_marginTop">@dimen/marTop</item>

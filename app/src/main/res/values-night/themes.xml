@@ -8,16 +8,16 @@
         <item name="android:textSize">@dimen/calc_button_size</item>
     </style>
 
-    <style name="light" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <item name="colorOnPrimary">@color/white</item>
-        <item name="android:background">@drawable/pic</item>
+    <style name="dark" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="android:background">@drawable/pic_night</item>
         <item name="android:layout_weight">1</item>
-        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimary">#35519C</item>
         <item name="android:textSize">@dimen/calc_button_size</item>
     </style>
 
     <style name="theme">
-        <item name="android:backgroundTint">#586281</item>
+        <item name="android:backgroundTint">@color/grey</item>
         <item name="android:textSize">@dimen/calc_button_size_theme</item>
     </style>
 
